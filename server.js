@@ -63,6 +63,11 @@ app.use(function(req, res, next) {
 });
 
 // Listening for requests
+const listener = app.listen(port, () => {
+  console.log(`Your app is listening on port ${port}`)
+})
+/*
 const listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
+*/
